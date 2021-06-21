@@ -46,6 +46,13 @@ Route::group(['middleware' => 'auth'],function() {
     Route::get('/admin/dokter/edit/{id}', 'DokterController@edit')->name('dokter.edit');
     Route::post('/admin/dokter/update/{id}', 'DokterController@update')->name('dokter.update');
     Route::get('/admin/dokter/destroy/{id}', 'DokterController@destroy')->name('dokter.destroy');
+
+    Route::get('/admin/poli', 'PoliController@index')->name('poli');
+    Route::get('/admin/poli/create', 'PoliController@create')->name('poli.create');
+    Route::post('/admin/poli/store', 'PoliController@store')->name('poli.store');
+    Route::get('/admin/poli/edit/{id}', 'PoliController@edit')->name('poli.edit');
+    Route::post('/admin/poli/update/{id}', 'PoliController@update')->name('poli.update');
+    Route::get('/admin/poli/destroy/{id}', 'PoliController@destroy')->name('poli.destroy');
    
     Route::get('/admin/jadwal-praktek', 'JadwalPraktekController@index')->name('jadwal-praktek');
     Route::get('/admin/jadwal-praktek/create', 'JadwalPraktekController@create')->name('jadwal-praktek.create');

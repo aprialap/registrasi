@@ -60,7 +60,7 @@ class PasienController extends Controller
 
     public function update(Request $request, $id)
     {
-        // return $request;
+
         $input     = $request->except('_token');
         $validator = Validator::make($input, [
             'no_rm'  => 'required',

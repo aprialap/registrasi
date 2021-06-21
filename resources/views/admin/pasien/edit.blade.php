@@ -8,7 +8,7 @@
         <h6 class="m-0 font-weight-bold text-primary">Edit Pasien</h6>
     </div>
     <div class="card-body">
-    <form action="{{route('pasien.store')}}" method="post">
+    <form action="{{route('pasien.update', $data->id)}}" method="post">
     @csrf
 
         <div class="row">

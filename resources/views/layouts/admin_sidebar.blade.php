@@ -29,6 +29,11 @@
                     <span>Dokter</span></a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="{{route('poli')}}">
+                    <i class="fa fa-sitemap"></i>
+                    <span>Poli</span></a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="{{route('jadwal-praktek')}}">
                     <i class="fa fa-medkit"></i>
                     <span>Jadwal Praktek</span></a>
